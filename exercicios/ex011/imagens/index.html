@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="foto-p.png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png">
+        <img src="foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" controls loop    >
+        <source src="/ex011/midia/2013-03-14-13-03-2013-e5am6b.mp3" type="audio/mpeg">
+    </audio>
+    <p><a href="/ex011/midia/2013-03-14-13-03-2013-e5am6b.mp3" download="Saco Cheio Podcast">clique aqui</a> para baixar o podcast</p>
+</body>
+</html>

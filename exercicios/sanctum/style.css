@@ -1,0 +1,107 @@
+@chatset: "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/ 
+}
+body {
+    background-image: linear-gradient(45deg, #D9A74A, #F2C572, #D99A4E, #BFB8B4);
+}
+
+
+body#bmain {
+    background-image: linear-gradient(45deg, #A60311, #A60321, #D9A404, #BF7E04);
+}
+
+
+.main {
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    width: 1015px;
+    padding: 10px;
+    margin: auto;
+}
+
+.main h1 {
+    
+    color: #F2C572;
+    text-align: center;
+}
+
+.main h2 {
+    text-align: center;
+}
+
+
+.tedeum {
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+
+
+.centralizar{
+    border-radius: 500px;
+    text-align: center; 
+}
+
+.tedeum h1 {
+    
+    color: #F2C572;
+    text-align: center;
+}
+
+.tedeum p {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+.tedeum audio {
+    width: 100%;
+    margin-top: 30px;   
+    margin-bottom: 5px;
+    
+
+}
+
+.alinhar {
+    text-align: center;
+    margin-top: 30px;
+}
+
+p#diferente {
+    text-align: center;
+    width: 100px; 
+    display: block;
+    margin-top: 0%;
+    
+
+}
+p#diferente:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+p#diferente:active {
+    color: #D9A74A;
+}
+
+a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkred;
+}
