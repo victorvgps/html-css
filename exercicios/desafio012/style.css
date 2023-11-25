@@ -17,6 +17,7 @@
 
 html, body {
     min-height: 100vh;
+    min-width: 100vw;
     background-color: dark;
     font-family: var(--fonte1);
 
@@ -78,7 +79,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 0px black;
 }
