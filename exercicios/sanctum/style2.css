@@ -100,6 +100,11 @@ main h2 {
 
 }
 
+.animachristi {
+    height: 300px;
+    margin-left: px;
+}
+
 main h2 > a:hover {
     background-color: #D9C5B4;
     border-radius: 5px;
