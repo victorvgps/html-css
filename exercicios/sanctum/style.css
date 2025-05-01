@@ -13,6 +13,10 @@ body#bmain {
     background-image: linear-gradient(45deg, #A60311, #A60321, #D9A404, #BF7E04);
 }
 
+header > h1 {
+    padding: 100px;
+    text-align: center;
+}
 
 .main {
 
@@ -32,6 +36,13 @@ body#bmain {
 
 .main h2 {
     text-align: center;
+}
+
+main img {
+    display: block;          /* Garante que fique em uma nova linha */
+    margin: 0 auto;          /* Centraliza horizontalmente */
+    max-width: 100%;         /* Responsivo */
+    height: auto;
 }
 
 
