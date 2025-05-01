@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "Trajan Pro 3";
+    src: url("fonts/Trajan\ Pro\ Regular.ttf") format("truetype");
+}
 
 :root {
     --cor-primaria: #D9A74A;
@@ -14,7 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Trajan Pro;
+    font-family: "Trajan Pro 3", Georgia, "Times New Roman", Times, serif;
 }
 
 body {
