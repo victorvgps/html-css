@@ -2,7 +2,9 @@
 
 @font-face {
     font-family: "Trajan Pro 3";
-    src: url("fonts/Trajan\ Pro\ Regular.ttf") format("truetype");
+    src: url("fonts/Trajan\ Pro\ Regular.woff2") format("woff2"),
+         url("fonts/Trajan\ Pro\ Regular.woff") format("woff"),
+         url("fonts/Trajan\ Pro\ Regular.ttf") format("truetype");
 }
 
 :root {
