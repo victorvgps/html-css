@@ -23,8 +23,28 @@
     </nav>
 
     <main>
+        <section class="boas-vindas">
+            <h2>Bem-vindo ao “Ora et Labora”</h2>
+            <p>
+                Este site é um espaço dedicado à beleza da oração cantada. Aqui você encontrará os mais belos cantos gregorianos,
+                usados por séculos na liturgia cristã para elevar a alma a Deus.
+            </p>
+        </section>
+
+        <section class="destaque">
+            <h2>Canto em Destaque: Miserere Mei Deus</h2>
+            <audio controls>
+                <source src="cantos/miserere.mp3" type="audio/mpeg">
+                <track src="audios/miserere-legenda.vtt" kind="captions" srclang="la" label="Latim">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <p>
+                Um dos salmos penitenciais mais profundos, tradicionalmente entoado nas noites da Quaresma.
+            </p>
+        </section>
+
         <h1>Cantos Gregorianos</h1>
-        
+
         <section class="container" aria-label="Lista de Cantos Gregorianos">
             <article class="cantos">
                 <a href="sanctum.html" rel="next">
@@ -67,6 +87,22 @@
                     <img src="imagens/de-pacem-domine.png" alt="Imagem ilustrativa da De Pacem Domine">
                 </a>
             </article>
+        </section>
+
+        <blockquote class="citacao">
+            “Quem canta reza duas vezes.” — Santo Agostinho
+        </blockquote>
+
+        <div class="leia-mais">
+            <a href="sobre-canto-gregoriano.html">O que é o Canto Gregoriano?</a>
+        </div>
+
+        <section class="newsletter">
+            <h2>Receba novidades sobre novos cantos</h2>
+            <form>
+                <input type="email" placeholder="Seu email" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
         </section>
     </main>
 

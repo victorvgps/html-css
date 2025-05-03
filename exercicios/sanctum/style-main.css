@@ -165,3 +165,114 @@ footer {
 footer p {
     color: var(--cor-texto);
 }
+
+/* Seção de boas-vindas */
+.boas-vindas {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(217, 197, 180, 0.2);
+    border-left: 6px solid var(--cor-primaria);
+    border-radius: 8px;
+}
+
+.boas-vindas h2 {
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+}
+
+.boas-vindas p {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Seção de destaque com áudio */
+.destaque {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid var(--cor-quaternaria);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.destaque h2 {
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+}
+
+.destaque p {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Citação de Santo Agostinho */
+.citacao {
+    margin: 50px auto;
+    padding: 20px;
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--cor-texto);
+    background-color: rgba(242, 197, 114, 0.15);
+    border-left: 5px solid var(--cor-primaria);
+    border-radius: 6px;
+    max-width: 900px;
+}
+
+/* Botão/Link Leia Mais */
+.leia-mais {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.leia-mais a {
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.leia-mais a:hover {
+    background-color: var(--cor-terciaria);
+}
+
+/* Newsletter */
+.newsletter {
+    margin-top: 60px;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgba(191, 184, 180, 0.25);
+    border-radius: 10px;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+    color: var(--cor-texto);
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid var(--cor-quaternaria);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: var(--cor-terciaria);
+}
