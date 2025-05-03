@@ -1,118 +1,178 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "Trajan Pro 3";
+    src: url("fonts/Trajan Pro Regular.woff2") format("woff2"),
+         url("fonts/Trajan Pro Regular.woff") format("woff"),
+         url("fonts/Trajan Pro Regular.ttf") format("truetype");
+}
+
+:root {
+    --cor-primaria: #D9A74A;
+    --cor-secundaria: #F2C572;
+    --cor-terciaria: #D99A4E;
+    --cor-quaternaria: #BFB8B4;
+    --cor-texto: #8C603A;
+}
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    /*height: 100%;*/ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trajan Pro 3", Georgia, "Times New Roman", Times, serif;
 }
+
 body {
-    background-image: linear-gradient(45deg, #D9A74A, #F2C572, #D99A4E, #BFB8B4);
+    background: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria), var(--cor-terciaria), var(--cor-quaternaria));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-
-body#bmain {
-    background-image: linear-gradient(45deg, #A60311, #A60321, #D9A404, #BF7E04);
-}
-
-header > h1 {
-    padding: 100px;
+header {
+    height: 250px;
+    position: relative;
+    background: url(imagens/trindade2.png) no-repeat center top / cover;
+    color: rgba(88, 45, 4, 0.801);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.main {
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.116); /* Escurece o fundo */
+    z-index: 1;
+}
 
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px black;
-    width: 1015px;
+header h1, header p {
+    position: relative; /* Fica acima da camada de escurecimento */
+    z-index: 2;
+    color: #D9A74A;;; /* Clareia os títulos */
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.25); /* Mantém o efeito de sombra suave */
+}
+
+header p {
+    font-size: 1.8em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2); /* Mantém o efeito de sombra suave */
+}
+
+nav {
+    background-color: rgba(217, 197, 180, 0.6);
+    padding: 15px 30px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav li a {
+    color: var(--cor-texto);
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold;
     padding: 10px;
-    margin: auto;
+    transition: background-color 0.3s;
 }
 
-.main h1 {
-    
-    color: #F2C572;
+nav li a:hover {
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.712);
+    border-radius: 10px;
+    flex: 1;
+}
+
+main h1 {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 2.2em;
+    color: var(--cor-secundaria);
 }
 
-.main h2 {
-    text-align: center;
-}
-
+/* Imagens no conteúdo */
 main img {
-    display: block;          /* Garante que fique em uma nova linha */
-    margin: 0 auto;          /* Centraliza horizontalmente */
-    max-width: 100%;         /* Responsivo */
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
     height: auto;
 }
 
-
-.tedeum {
-
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px black;
-    width: 600px;
-    padding: 10px;
-    margin: auto;
-}
-
-
-
-.centralizar{
-    border-radius: 500px;
-    text-align: center; 
-}
-
-.tedeum h1 {
-    
-    color: #F2C572;
-    text-align: center;
-}
-
-.tedeum p {
+/* Parágrafos */
+main p {
     max-width: 600px;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-    font-family: Arial, sans-serif;
+    margin: 15px auto 10px auto;
     font-size: 16px;
     color: #333;
     text-align: left;
 }
 
-.tedeum audio {
+/* Áudio */
+main audio {
     width: 100%;
-    margin-top: 30px;   
-    margin-bottom: 5px;
-    
-
+    margin: 30px 0 5px 0;
 }
 
+/* Centralização de elementos */
 .alinhar {
     text-align: center;
     margin-top: 30px;
 }
 
-p#diferente {
+/* Botão "Voltar" */
+#voltar {
     text-align: center;
-    width: 100px; 
-    display: block;
-    margin-top: 0%;
-    
-
+    width: 100px;
+    margin: 5px auto 0;
+    cursor: pointer;
+    font-weight: bold;
 }
-p#diferente:hover {
+
+#voltar:hover {
     color: black;
     text-decoration: underline;
 }
 
-p#diferente:active {
-    color: #D9A74A;
+#voltar:active {
+    color: var(--cor-primaria);
 }
 
-a:visited {
-    text-decoration: none;
+/* Rodapé */
+footer {
+    background-color: rgba(217, 197, 180, 0.6);
     font-weight: bold;
-    color: darkred;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    color: var(--cor-texto);
 }
