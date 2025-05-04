@@ -32,7 +32,7 @@ body {
 header {
     height: 250px;
     position: relative;
-    background: url(imagens/banner.jpg) no-repeat center top / cover;
+    background: url(imagens/trindade2.png) no-repeat center top / cover;
     color: rgba(88, 45, 4, 0.801);
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ header::after {
 header h1, header p {
     position: relative; /* Fica acima da camada de escurecimento */
     z-index: 2;
-    color: var(--cor-primaria) /* Clareia os títulos */
+    color: #D9A74A;;; /* Clareia os títulos */
 }
 
 header h1 {
@@ -99,114 +99,88 @@ a {
     text-decoration: none;
 }
 
+/* Conteúdo principal */
 main {
     width: 1400px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.712);
+    border-radius: 10px;
     flex: 1;
 }
 
-main h1 {
+main > h1 {
+    color: #d99a4e;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    font-size: 2.2em;
-    color: var(--cor-secundaria);
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
-}
-
-.container article {
-    width: 220px;
-    text-align: center;
-}
-
-.container h2 {
-    font-size: 1.1em;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
-    border-radius: 5px;
-    padding: 10px;
     margin-bottom: 10px;
-    transition: background-color 0.3s;
+    border-bottom: 2px solid #f2c572;
+    padding-bottom: 5px;
 }
 
-.container a:hover h2 {
-    background-color: var(--cor-terciaria);
-}
-
-.container img {
-    width: 100%;
+/* Imagens no conteúdo */
+main img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
 }
 
-.container img:hover {
-    transform: scale(1.1);
-}
-
-footer {
-    background-color: rgba(217, 197, 180, 0.6);
-    font-weight: bold;
-    text-align: center;
-    padding: 15px;
-    margin-top: auto;
-}
-
-footer p {
-    color: var(--cor-texto);
-}
-
-/* Seção de boas-vindas */
-.boas-vindas {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: rgba(217, 197, 180, 0.2);
-    border-left: 6px solid var(--cor-primaria);
-    border-radius: 8px;
-}
-
-.boas-vindas h2 {
-    color: var(--cor-texto);
-    margin-bottom: 10px;
-}
-
-.boas-vindas p {
-    color: #444;
-    line-height: 1.6;
-}
-
-/* Seção de destaque com áudio */
-.destaque {
-    margin: 40px 0;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.4);
-    border: 1px solid var(--cor-quaternaria);
-    border-radius: 10px;
-    text-align: center;
-}
-
-.destaque h2 {
-    color: var(--cor-texto);
-    margin-bottom: 10px;
-}
-
-.destaque p {
-    margin-top: 10px;
+/* Parágrafos */
+main p {
+    max-width: 600px;
+    margin: 15px auto 10px auto;
+    font-size: 16px;
     color: #333;
+    text-align: left;
 }
 
-/* Citação do dia */
+/* Áudio */
+main audio {
+    width: 100%;
+    margin: 30px 0 5px 0;
+}
+
+section > h2 {
+    color: #d99a4e;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f2c572;
+    padding-bottom: 5px;
+  }
+
+ section > p {
+    line-height: 1.6;
+    color: #4e2e15;
+  }
+
+  .downloads a {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 10px;
+    background: #f2c572;
+    color: #4e2e15;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .downloads a:hover {
+    background: #d9a74a;
+  }
+
+  .video {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  iframe {
+    max-width: 100%;
+    height: 315px;
+    border: none;
+  }
+
+  /* Citação do dia */
 .citacao {
     margin: 50px auto;
     padding: 20px;
@@ -220,7 +194,6 @@ footer p {
     max-width: 900px;
 }
 
-/* Botão/Link Leia Mais */
 .leia-mais {
     text-align: center;
     margin-top: 30px;
@@ -277,6 +250,44 @@ footer p {
     background-color: var(--cor-terciaria);
 }
 
+/* Centralização de elementos */
+.alinhar {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Botão "Voltar" */
+#voltar {
+    text-align: center;
+    width: 100px;
+    margin: 5px auto 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#voltar:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#voltar:active {
+    color: var(--cor-primaria);
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(217, 197, 180, 0.6);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    color: var(--cor-texto);
+}
+
+
+
 @media (max-width: 768px) {
     main {
         width: 95%;
@@ -324,3 +335,5 @@ footer p {
         font-size: 1.3em;
     }
 }
+
+ 
